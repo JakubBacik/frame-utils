@@ -14,6 +14,6 @@ void scale_vector(const float *src, const float *a, const float *b, float *resul
  * Parsuje ramke "X "
  * @retval 0 sukces
  */
-int parse_coeff_recieve_frame(const char *input, float *cA, float *cB);
+int parse_coeff_receive_frame(const char *input, float *cA, float *cB);
 
 #endif
