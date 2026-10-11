@@ -17,7 +17,7 @@ int parse_coeff_receive_frame(const char *input, float *cA, float *cB)
     if (*ptr != 'X')
         return -1;
 
-    ptr += 7;   /* pomiń nagłówek "X rr cc " */
+    ptr += HEADER_SKIP;
 
     for (int i = 0; i < SENSOR_COUNT; i++) {
         cA[i] = strtof(ptr, &end);
